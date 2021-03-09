@@ -1,0 +1,222 @@
+/* GENERAL */
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #2f436c;
+}
+
+/* COMMON UTILITIES */
+
+/* COMMON UTILITIES END*/
+
+/* HEADER */
+header .do-navbar{
+    background-color: white;
+    height: 70px;
+    padding-top: 10px;
+    border-radius: 0;
+    border: none;
+}
+
+header .do-navbar .do-brand img{
+    width: 200px;
+}
+
+header .do-navbar a.do-brand{
+    padding-top: 4px;
+    padding-bottom: 0;
+    margin-right: 60px;
+}
+
+header .do-navbar ul > li a{
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: white;
+    color: #2f436c !important;
+    transition: all 300ms;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+header .do-navbar .do-navbar-toggle{
+    position: relative;
+    bottom: 2px;
+    left: 2px;
+    border: none;
+    font-size: 1.5rem;
+    color: #3f8fff !important;
+}
+
+header .do-nav,
+header .do-navbar-right{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header .do-navbar-right{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+}
+
+header .do-navbar .do-dropdown a,
+header .do-navbar .do-dropdown{
+    position: inherit;
+    cursor: pointer;
+    
+}
+
+header .do-navbar .do-dropdown a::after{
+    content: "\f078";
+    font-family: "Font Awesome 5 Free";  
+    font-weight: 900; 
+}
+
+header .do-dropdown .subsection{
+    z-index: 9;
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    transform: translateX(-50%) scaleY(0);
+    height: 500px; /* fake content */
+    width: 96vw;
+    background-color: rgba(128, 0, 128, 0.329);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 300ms;
+    border-radius: 8px;
+}
+
+/* decoration & animation */
+header .do-navbar ul > li a:hover{
+    background-color: #3f8fff !important;
+    color: #fff !important;
+}
+
+header .do-navbar .do-navbar-toggle:hover,
+header .do-navbar .do-navbar-toggle:focus{
+    background-color: transparent;
+}
+
+header .do-navbar .do-dropdown a:hover .subsection{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) scaleY(1);
+}
+
+/* responsive */
+/* smartphones */
+@media screen and (max-width: 320px){
+    header .do-navbar .do-brand img{
+        width: 190px;    
+    }
+
+    header .do-navbar a.do-brand{
+        margin-right: 0px;
+    }
+}
+
+/* tablets */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    header .navbar-header{
+        float: none;
+    }
+
+    header .navbar-right{
+        float: none !important;
+    }
+
+    header .navbar-toggle{
+        display: block;
+        margin-right: 0;
+    }
+
+    header .navbar-toggle .do-open{
+        font-size: 1.6rem;
+    }
+
+    header .navbar-collapse{
+        width: 100vw;
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+
+    header .navbar-fixed-top{
+        top: 0;
+        border-width: 0 0 1px;
+    }
+
+    header .navbar-collapse.collapse{
+        display: none !important;
+    }
+
+    header .navbar-nav{
+        float: none !important;
+        margin-top: 7.5px;
+    }
+
+    header .navbar-nav > li{
+        float: none;
+    }
+
+    header .navbar-nav > li > a{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    header .collapse.show{
+        display: block !important;
+        margin: 0;
+    }
+
+    header .do-navbar div.container{
+        margin: 0;
+        padding: 0;
+        max-width: 100vw;
+    }
+
+    header .do-nav,
+    header .do-navbar-right{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    header .do-navbar a.do-brand img{
+        margin-left: 15px;
+    }
+}
+
+/* desktpo */
+@media screen and (min-width: 993px){
+    header .collapse.show{
+        background-color: transparent !important;
+    }
+
+    header .do-navbar ul > li a:hover{
+        background-color: transparent !important;
+        color: #3f8fff !important;
+    }
+
+    header .do-navbar .do-brand img{
+        margin-right: 70px;
+    }
+
+    header .do-navbar li .do-btn.do-btn-signup{
+        margin-top: 7px;
+        margin-left: 4px;
+        padding: 8px;
+        border: 1px solid #3f8fff;
+        color: #3f8fff !important;
+        border-radius: 8px;
+        transition: all 300ms;
+    }
+
+    header .do-navbar li .do-btn.do-btn-signup:hover{
+        border: 1px solid transparent;
+        color: #fff !important;
+        background-color: #3f8fff !important;
+    }
+}
+/* HEADER END */
+ 
