@@ -102,9 +102,107 @@ header .do-navbar .do-dropdown a:hover .subsection{
     visibility: visible;
     transform: translateX(-50%) scaleY(1);
 }
+/* HEADER END */
+ 
+/* JUMBOTRON */
+.jumbotron{
+    padding-top: 11rem;
+    padding-bottom: 5rem;
+    background-color: transparent;
+    background-image: url("../img/bg-banner-home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-/* responsive */
+.jumbotron .do-left.contents{
+    color: #fff;
+}
+
+.jumbotron h1{
+    font-weight: 700;
+}
+
+.jumbotron .do-right.contents{
+    padding-top: 2rem;
+}
+
+.jumbotron .do-right .popup-login{
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 8px;
+}
+
+.jumbotron .do-right .popup-login h2{
+    font-weight: 700;
+}
+
+.jumbotron .do-right form *{
+    font-weight: 700;
+}
+
+.jumbotron .do-right .popup-login h2 + h2{
+color: #006aff;
+margin-top: 0;
+}
+
+.jumbotron .do-btn-popup{
+    width: 100%;  
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all 300ms;
+    color: #fff;
+    background-color: #579aff;
+    margin-bottom: 1.5rem;
+}
+
+.jumbotron .google-login{
+    position: relative;
+    display: inline-block;
+    width: 100%;  
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all 300ms;
+    color: #747474;
+    text-decoration: none !important;
+    box-shadow: 0px 1px 5px 0px rgba(128, 128, 128, 0.534);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.jumbotron .google-login img{
+    width: 2rem;
+    position: absolute;
+    left: 1rem;
+}
+
+.jumbotron .do-right h5 a{
+    text-decoration: underline;
+}
+
+/* decoration & animation */
+.jumbotron .do-btn-popup:hover{
+    color: #579aff;
+    border: 1px solid #579aff;
+    background-color: white;
+}
+
+.jumbotron .google-login:hover{
+    background-color: rgba(128, 128, 128, 0.534);
+    color: white;
+    box-shadow: none;
+}
+/* JUMBOTRON END */
+
+/* RESPONSIVE */
 /* smartphones */
+@media screen and (max-width: 290px){
+    .jumbotron .google-login img{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 320px){
     header .do-navbar .do-brand img{
         width: 190px;    
@@ -187,7 +285,7 @@ header .do-navbar .do-dropdown a:hover .subsection{
     }
 }
 
-/* desktpo */
+/* desktop */
 @media screen and (min-width: 993px){
     header .collapse.show{
         background-color: transparent !important;
@@ -217,6 +315,8 @@ header .do-navbar .do-dropdown a:hover .subsection{
         color: #fff !important;
         background-color: #3f8fff !important;
     }
+
+    .jumbotron .do-left.contents{
+        padding-right: 1rem;
+    }
 }
-/* HEADER END */
- 
