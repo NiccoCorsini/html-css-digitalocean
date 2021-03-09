@@ -328,12 +328,29 @@ margin-top: 0;
 .designed .do-slide .photo-title-row + .circle{
     background-color: #579aff;
 }
+/* DESIGNED FOR DEVELOPERS END*/
 
+/* BUSINESS FEATURES */
+.features{
+    padding: 4rem 0 2rem;
+}
 
+.features h2{
+    margin-bottom: 1rem;
+}
+
+.features .inner-content{
+    padding: 2rem 0;
+}
+/* BUSINESS FEATURES END*/
 
 /* RESPONSIVE */
 /* iPhones & smartphones */
 @media screen and (max-width: 290px){
+    .jumbotron .do-left.contents h1{
+        font-size: 3.5rem;
+    }
+
     .jumbotron .google-login img{
         display: none;
     }
@@ -356,6 +373,12 @@ margin-top: 0;
 
     .designed .do-slide .photo-title-row{
         padding-bottom: 6rem;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .features h3{
+        font-size: 2.2rem;
     }
 }
 
@@ -466,6 +489,10 @@ margin-top: 0;
 
     header .do-navbar a.do-brand img{
         margin-left: 15px;
+    }
+
+    .jumbotron .do-left.contents h1{
+        font-size: 4rem;
     }
 }
 
