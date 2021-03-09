@@ -16,6 +16,17 @@ ul li{
 ul{
     padding: 0;
 }
+
+h1,
+h2,
+h3,
+h4{
+    font-weight: 700;
+}
+
+.bg-grey{
+    background-color: #f3f5f9;
+}
 /* COMMON UTILITIES END*/
 
 /* HEADER */
@@ -208,10 +219,6 @@ margin-top: 0;
 /* JUMBOTRON END */
 
 /* INNOVATIVE BUSINESS */
-.innovative{
-    background-color: #f3f5f9;
-}
-
 .innovative .contents{
     padding-top: 3.5rem;
     padding-bottom: 2.5rem;
@@ -287,7 +294,40 @@ margin-top: 0;
 }
 /* DEPLOY AND SCALE END */
 
+/* DESIGNED FOR DEVELOPERS */
+.designed{
+ padding: 4.5rem 0 4.5rem;
+}
 
+.designed .intro{
+    padding-bottom: 3.5rem;
+}
+
+.designed .intro p{
+    color: #5c6a88;
+    font-size: 2rem;
+}
+
+.designed .do-slide .photo-title-row{
+    position: relative;
+}
+
+.designed .do-slide .photo-title-row img{
+    margin-bottom: 2.5rem;
+}
+
+.designed .do-slide .circle{
+    display: inline-block;
+    margin: 1px;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 1px solid #579aff;
+}
+
+.designed .do-slide .photo-title-row + .circle{
+    background-color: #579aff;
+}
 
 
 
@@ -309,6 +349,16 @@ margin-top: 0;
     }
 }
 
+@media screen and (max-width: 767px){
+    .designed .intro{
+        padding-bottom: 6rem;
+    }
+
+    .designed .do-slide .photo-title-row{
+        padding-bottom: 6rem;
+    }
+}
+
 /* iPads & tablets */
 @media screen and (min-width: 768px){
     .innovative h5{
@@ -322,6 +372,31 @@ margin-top: 0;
     }
 }
 
+@media screen and (min-width: 768px){
+    .designed .do-slide .photo-title-row h5::after{
+        content: "\f054";
+        font-family: "Font Awesome 5 Free";  
+        font-weight: 900;
+        font-size: 4.5rem;
+        color: currentColor;
+        position: absolute;
+        right: -5.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .designed .do-slide .photo-title-row h5::before{
+        content: "\f053";
+        font-family: "Font Awesome 5 Free";  
+        font-weight: 900;
+        font-size: 4.5rem;
+        color: #6f7b97;
+        position: absolute;
+        left: -5.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
 
 @media screen and (min-width: 768px) and (max-width: 992px){
     header .navbar-header{
