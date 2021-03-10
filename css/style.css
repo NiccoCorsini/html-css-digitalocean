@@ -79,15 +79,14 @@ header .do-navbar-right{
     margin-bottom: 0;
 }
 
-header .do-navbar-right{
+header .do-navbar ul.do-navbar-right > li a.do-btn.do-btn.do-btn-signup{
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    overflow: hidden;
 }
 
 header .do-navbar .do-dropdown a,
 header .do-navbar .do-dropdown{
-    position: inherit;
+    position: relative;
     cursor: pointer;
     
 }
@@ -102,15 +101,25 @@ header .do-dropdown .subsection{
     z-index: 9;
     position: absolute;
     left: 50%;
-    top: 70px;
-    transform: translateX(-50%) scaleY(0);
-    height: 500px; /* fake content */
+    top: 50px;
+    transform: translateX(-50%);
+    height: 0px; /* fake content */
     width: 96vw;
-    background-color: rgba(128, 0, 128, 0.329);
+    background-color: white;
     opacity: 0;
     visibility: hidden;
     transition: all 300ms;
     border-radius: 8px;
+    box-shadow: 0px 1px 10px 0px rgba(128, 128, 128, 0.26);
+    text-align: center;
+}
+
+header .do-dropdown .subsection h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: #2f436c !important;
 }
 
 /* decoration & animation */
@@ -127,7 +136,7 @@ header .do-navbar .do-navbar-toggle:focus{
 header .do-navbar .do-dropdown a:hover .subsection{
     opacity: 1;
     visibility: visible;
-    transform: translateX(-50%) scaleY(1);
+    height: 500px;
 }
 /* HEADER END */
  
@@ -818,6 +827,28 @@ footer ul li a:hover{
         border: 1px solid transparent;
         color: #fff !important;
         background-color: #3f8fff !important;
+    }
+
+    header .do-navbar .do-dropdown a,
+    header .do-navbar .do-dropdown{
+    position: inherit;
+    }
+
+    header .do-dropdown .subsection{
+        z-index: 9;
+        position: absolute;
+        left: 50%;
+        top: 70px;
+        transform: translateX(-50%);
+        height: 0px; /* fake content */
+        width: 99.1vw;
+        background-color: white;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 300ms;
+        border-radius: 0;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
     }
 
     .jumbotron .do-left.contents{
