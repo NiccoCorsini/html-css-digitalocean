@@ -439,6 +439,35 @@ margin-top: 0;
 }
 /* DEVELOPMENT TEAMS END*/
 
+/* GET STARTED */
+.get-started{
+    padding: 4rem 0 4.5rem;
+    background-image: linear-gradient(to top, #001e9a, #0042bb);
+    color: white;
+}
+
+.get-started h2{
+    margin-bottom: 2.2rem;
+}
+
+.get-started .do-btn-big{
+    display: inline-block;
+    color: #086fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: white;
+    transition: all 300ms;
+}
+
+/* animation & decoration */
+.get-started .do-btn-big:hover{
+    background-image: linear-gradient(to top, #086fff, #539afd);
+    
+    color: white;
+}
+
 /* RESPONSIVE */
 /* iPhones & smartphones */
 @media screen and (max-width: 290px){
@@ -483,6 +512,10 @@ margin-top: 0;
 
 @media screen and (max-width: 992px){
     .features h3{
+        font-size: 2.2rem;
+    }
+
+    .development .intro h2{
         font-size: 2.2rem;
     }
 }
