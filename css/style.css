@@ -463,10 +463,49 @@ margin-top: 0;
 
 /* animation & decoration */
 .get-started .do-btn-big:hover{
-    background-image: linear-gradient(to top, #086fff, #539afd);
-    
+    background-image: linear-gradient(to top, #086fff, #539afd);   
     color: white;
 }
+/* GET STARTED END */
+
+/* FOOTER */
+footer{
+    background-color: #031c4e;
+    padding: 5rem 0;
+    color: #8791a6;
+}
+
+footer .contents img{
+    margin-bottom: 1.5rem;
+}
+
+footer .contents .testo + .testo{
+    color: #4d5d7e;
+}
+
+footer .contents ul li{
+    display: inline-block;
+    margin-top: 1rem;
+    margin-right: 0.7rem;
+    font-size: 2rem;
+}
+
+footer ul li a{
+    color: #8791a6;
+    line-height: 2.5rem;
+}
+
+footer ul li h4{
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+/* decoration & animation */
+footer ul li a:hover{
+    text-decoration: none;
+    color: white;
+}
+/* FOOTER END */
 
 /* RESPONSIVE */
 /* iPhones & smartphones */
