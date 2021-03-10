@@ -376,6 +376,69 @@ margin-top: 0;
 }
 /* SERVICE YOUR CUSTOMERS END*/
 
+/* DEVELOPMENT TEAMS */
+.development{
+    padding: 4.5rem 0 4.5rem;
+}
+   
+.development .intro{
+    padding-bottom: 3.5rem;
+}
+   
+.development .intro h2{
+    margin-bottom: 3rem;
+}
+
+.development .do-slide .photo-title-row #custom-p{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.development .do-slide .photo-title-row .photo-container{
+    background-color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+   
+.development .do-slide .photo-title-row img{
+    max-width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.development .do-slide .photo-title-row .photo-container p{
+    color: #5c6a88;
+    margin-bottom: 1rem;
+}
+
+.development .do-slide .photo-title-row .photo-container .testo{
+    font-size: 1.2rem;
+}
+
+.development .do-slide .photo-title-row .photo-container .testo + .testo{
+    margin-bottom: 1rem;
+}
+
+.development .do-slide .photo-title-row .photo-container a{
+    font-size: 1.2rem;
+}
+   
+.development .do-slide .circle{
+    cursor: pointer;
+    display: inline-block;
+    margin: 1px;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 1px solid #579aff;
+}
+   
+.development .do-slide .photo-title-row + .circle{
+    background-color: #579aff;
+}
+/* DEVELOPMENT TEAMS END*/
+
 /* RESPONSIVE */
 /* iPhones & smartphones */
 @media screen and (max-width: 290px){
@@ -436,13 +499,8 @@ margin-top: 0;
         width: calc((100% / 6) - 48px);
     }
 
-    .customers table{
-        font-size: 1.5rem;
-    }
-}
-
-@media screen and (min-width: 768px){
-    .designed .do-slide .photo-title-row h5::after{
+    .designed .do-slide .photo-title-row h5::after,
+    .development .do-slide .photo-title-row .photo-container .testo::after{
         content: "\f054";
         font-family: "Font Awesome 5 Free";  
         font-weight: 900;
@@ -455,7 +513,8 @@ margin-top: 0;
         cursor: pointer;
     }
 
-    .designed .do-slide .photo-title-row h5::before{
+    .designed .do-slide .photo-title-row h5::before,
+    .development .do-slide .photo-title-row .photo-container .testo::before{
         content: "\f053";
         font-family: "Font Awesome 5 Free";  
         font-weight: 900;
@@ -466,6 +525,10 @@ margin-top: 0;
         top: 50%;
         transform: translateY(-50%);
         cursor: pointer;
+    }
+
+    .customers table{
+        font-size: 1.5rem;
     }
 }
 
@@ -577,5 +640,9 @@ margin-top: 0;
 
     .jumbotron .do-left.contents{
         padding-right: 1rem;
+    }
+
+    .development .do-slide .photo-title-row img{
+        max-width: 70%;
     }
 }
